@@ -1,0 +1,17 @@
+.top-img {
+    background-image: url("../images/bora-bora-french-polynesia-sunset-ocean.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+.div-img {
+    background-image: url("../images/800px-Gras_im_Juni.jpg");
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+}
+
+.p10 {
+    padding-top: 10px;
+}

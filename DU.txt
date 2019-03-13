@@ -1,0 +1,26 @@
+Formular pre produkt:
+a - roznmer x -> cislo od 1 po 20000mm
+b - rozmer y -> cislo od 1 po 20000mm
+c - material -> zoznam select kde bude najmeneje 5 poloziek  pop-up menu
+d - datum vytvorenia -> date()
+e - cena float -> cena pomocou REGEX od 0.01 do 9999.99 eur
+f - poznamka -> textarea max 500 znakov
+--------------------------------------------------------------------------------
+
+vytvorit triedu rovnaku aky je formular
+
+--------------------------------------------------------------------------------
+
+vytvorit subor srpacuj.jsp 
+- naplnit objekt s udajmiu z formulara
+
+--------------------------------------------------------------------------------
+
+zobraz.jsp _> bootstrap tabulka  s udajmi, ziskanie zo session objektu
+
+--------------------------------------------------------------------------------
+
+formular aby sa naplnal (pokym sa nezatvori prehliadac)
+1. do session neukladat objekt Produkt ale ukladat zoznam typu produkt ArrayList<Produkt>
+
+2. zobraz.jsp budeme vyberat zoznam a udaje zo zoznamu vypisat do tabulky

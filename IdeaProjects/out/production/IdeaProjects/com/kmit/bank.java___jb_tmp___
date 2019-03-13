@@ -1,0 +1,19 @@
+package com.kmit;
+
+/**
+ * Created by student on 14.03.2018.
+ */
+public class bank {
+    private String nazov;
+    private String iban;
+    private Integer suma;
+
+    //void znamena ze metoda nebude nic vracat
+    public void setnazov(String nazov) {
+        this.nazov = nazov;
+    }
+
+    public String getnazov() {
+        return this.nazov;
+    }
+}

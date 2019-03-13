@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PiateCvicenie:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PiateCvicenie_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PiateCvicenie" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="PiateCvicenie/web/Web2" />
+      <element id="javaee-facet-resources" facet="PiateCvicenie/web/Web" />
+    </root>
+  </artifact>
+</component>

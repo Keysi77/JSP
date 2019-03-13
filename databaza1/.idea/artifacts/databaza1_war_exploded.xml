@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="databaza1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/databaza1_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="databaza1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="databaza1" />
+        </element>
+      </element>
+      <element id="library" level="project" name="mysql-connector-java-5.1.46" />
+    </root>
+  </artifact>
+</component>

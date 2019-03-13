@@ -1,0 +1,19 @@
+.first-image{
+    background-image: url("../images/egss.jpg");
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.second-image{
+    background-image: url("../images/egss.jpg");
+    width: 100%;
+    height: 250px;
+   background-repeat: no-repeat;
+    background-position: center;
+
+
+}

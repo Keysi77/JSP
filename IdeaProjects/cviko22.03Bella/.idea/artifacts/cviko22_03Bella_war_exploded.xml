@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cviko22.03Bella:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cviko22_03Bella_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="cviko22.03Bella/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cviko22.03Bella" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,39 @@
+@font-color : #000;
+@font-error-color:  #ff4b31;
+
+h1{
+	color: @font-color;
+}
+
+label.error {
+	font-weight: 300 ;
+	color: @font-error-color;
+	.error:before{
+		content: "* ";
+	}
+}
+table{
+	thead{
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	td{
+		height: 50px;
+		vertical-align: middle;
+	}
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+.container.marketing{
+
+		margin-top: 40px;
+		text-align: center;
+
+}
+
+/*
+label.error:before {
+	content: "* ";
+}*/

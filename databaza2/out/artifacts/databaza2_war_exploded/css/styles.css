@@ -1,0 +1,473 @@
+/* HTML atributy a ich styly*/
+/* Telo stranky */
+body {
+  font-size: 150%;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  color: #2B2B2B;
+  background: #F6F6F6;
+  /*background: #DFE2DB; /* farba pozadia*/
+  /*background: #2f313c;*/
+  margin: 0; }
+
+/* odkazy*/
+a {
+  color: #DE1B1B;
+  text-decoration: none;
+  transition: .5s all ease-in-out; }
+/* obrazky */
+a:hover{
+  opacity: .8;
+}
+
+
+/*clearfix na spravne floatovanie  */
+.container:before,
+.group:before,
+.menu:before,
+.container::after,
+.group:after,
+.menu::after{
+    content: " ";
+    display: table;
+}
+.group:after,
+.container:after,
+.menu:after{
+    clear: both;
+}
+.group,
+.container,
+.menu{
+    *zoom: 1;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+    height: auto;
+  vertical-align: middle; }
+
+/* h3 element pre navigaciu, čo sa stane ak klikneme na odkaz v menu, tak sa vykona
+všetko to, čo je v H3 -> je to v headeri v podmienke IF */
+
+h2{
+  font-size: 1.25em;
+  text-decoration: underline;
+}
+h4{
+  font-size: 0.6em;
+  text-decoration: none;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.8125em;
+  color: #DE1B1B;
+  /*color: #F7E953;*/
+  text-decoration: none;
+  transition: .5s all ease-in-out;
+  font-weight: normal;
+
+ }
+
+ strong{
+   font-size: 5em;
+   color: #DE1B1B;
+ }
+
+
+ /*article {
+	color: #fff;
+	font-size: 17px;
+	font-weight: normal;
+	background: #9F3FA3;
+	border-radius: 9px;
+	margin-bottom: 25px;
+
+
+	float: left;
+	width: 19.2%;
+
+	padding: 40px 14px;
+	margin-right: 1%;
+}
+*/
+/* Triedy*/
+/*  triedy v cykle pre nacitavanie z databazy*/
+.border-db{ /* vzhlad v sekcii adopcia */
+
+ border: 3px solid #141414;
+ border-radius: 15px;
+ width: 90%;
+ margin:  auto;
+ margin-bottom: 10px;
+ padding: 40px 14px;
+ margin-right: 1%;
+
+
+/*
+margin-right: 1%;
+  color: #fff;
+	font-size: 17px;
+	font-weight: normal;
+	background: #9F3FA3;
+	border-radius: 9px;
+	margin-bottom: 25px;
+	min-height: 320px;
+  */
+}
+.border-db h4{
+  color: #141414;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.border-db strong{
+  color: #DE1B1B;
+  font-size: 1.2em;
+  text-align:justify;
+}
+
+
+.container {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 1em; }
+.small-text {
+  font-size: 75%;
+  line-height: 1.5;
+  margin: 0; }
+.content {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.tim img{
+  max-width: 250px;
+  border-radius: 50%;
+  float: left;
+}
+.socialmedia img{
+  max-width: 100px;
+}
+.socialmedia img:hover{
+  opacity: 0.5;
+}
+
+/* Menu*/
+.menu {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none; }
+  /* toto sluzi, aby bolo menu vedla seba a nie pod sebou*/
+.menu li, .menu a {
+    display: inline-block; }
+/* farba pozadia v menu */
+.site-header {
+  /* background: #4C4A7F */
+   background: #141414;
+
+  }
+
+nav a {
+  color: #777;
+  font-size: 1.8125em;
+  padding: 1.8461538462em 0.6153846154em; }
+  /* hover a focus - ked mysou prejdeš v menu na odkaz - to je to ako sa bude spravat
+  ze sa zmeni farba, da sa tam ta ciarka underline a zmeni sa farba, hover je to
+  ked na to uz klikneš, že v akom stave to ostane,  v tomto pripade su rovnake, tak sa
+  to najcastejšie pouziva*/
+  nav a:hover, nav  a:focus {
+    color: #DE1B1B;
+      font-size: 1.8125em;
+
+ }
+
+/* Tlačidla */
+
+.buttons main {
+  background: hotpink;
+  border-top: 1px solid #ff369b; }
+.buttons .active a {
+  color: #e90074; }
+
+.btn-default, .btn-red, .btn-white, .btn-green {
+  font-size: 1.0625em;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 2em 0;
+  padding: 2em 1.4117647059em;
+  border-radius: 6px;
+  border-radius: 0.375em; }
+/* Def nastavenia tlacidiel, ostatne sa len prebiju*/
+.btn-default {
+  background-color: #545766;
+  text-shadow: 1px 1px 0 #31333c; }
+  .btn-default:hover, .btn-default:focus {
+    background-color: rgba(84, 87, 102, 0.85); }
+/* Zoberie def nastavenie a prida parametre pre RED tlacidlo*/
+.btn-red {
+  background-color: #DE1B1B;
+  text-shadow: 1px 1px 0 #fc220f; }
+  .btn-red:hover, .btn-red:focus {
+    background-color: rgba(170, 20, 20, 0.85); }
+    /* po priblizeni myskkou na button sa zmeni farba a ešte aj alfa kanal klesne o 15% (bude to take prehladnejšie) */
+
+    /* Zoberie def nastavenie a prida parametre pre white tlacidlo*/
+.btn-white {
+  background-color: #6B6E6A;
+  color: #2f313c; }
+  .btn-white:hover, .btn-white:focus {
+    background-color: rgba(107, 110, 106, 0.85); }
+
+.btn-green {
+  background-color: rgba(15, 173, 0, 0.85);
+    text-shadow: 1px 1px 0 #0FAD00; }
+    .btn-green:hover, .btn-green:focus {
+      background-color: rgba(15, 173, 0, 1); }
+
+/* Footer */
+
+.site-footer {
+  padding: 1.875em 0;
+  background: #141414;
+  color: #fff;
+}
+
+
+.site-footer a, .site-footer span {
+  color: rgba(140, 149, 173, 0.5); }
+.site-footer a {
+  border-bottom: 1px solid #434a5d; }
+.site-footer a:hover, .site-footer a:focus {
+  color: rgba(255, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.5); }
+.site-footer span {
+  padding-left: 1em; }
+
+
+/* Formular */
+
+.contact-form {
+  max-width: 35em;
+  margin: 4.5em auto 0;
+  text-align: left; }
+  .contact-form label {
+    font-size: 1.0625em;
+    display: block;
+    margin-bottom: 1.375em; }
+  .contact-form .btn {
+    font-size: 85%;
+    margin-top: 0; }
+    .contact-form .btn padding {
+      left: 2.5em;
+      right: 2.5em; }
+
+input,
+textarea {
+  color: #141414;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
+  outline: none;
+  padding: 0.625em;
+  margin-top: 0.375em;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 0.3125em; }
+
+  input:focus,
+  textarea:focus {
+    background-color: rgba(255, 255, 255, 0.6); }
+
+/* SLIDESHOE */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* to je to preblikavanie obrazkov v tej slideshow aby to nebolo take bez prechodu z jedneho na druhy*/
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.img-nav{
+  width:100%;
+
+}
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+}
+.total-value {
+  color:white;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+}
+.container p{
+  font-size: 18px;
+}
+thead, tfoot {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-image: -webkit-linear-gradient(top,#5cb85c 0,#419641 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#5cb85c),to(#419641));
+  background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+  color: white;
+}
+.btn-info{
+  margin-left: 50px;
+}
+.upper{
+  text-transform: uppercase;
+}
+
+.p1{
+  max-width: 100%;
+  height: auto;
+  width: 30%;
+  border: 2px solid rgba(136,136,136,0.15);
+  border-radius: 6px;
+  padding: 15px;
+  margin-right: 3%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #f0f0f0;
+    opacity: 0.7;
+    transition: .5s all ease-in-out;
+
+}
+.p1:hover{
+    transition: .5s all ease-in-out;
+opacity: 1;
+}
+.col-num-2{
+    max-width: 100%;
+    height: auto;
+    width: 45%;
+    border: 2px solid rgba(136,136,136,0.15);
+    border-radius: 6px;
+    padding: 15px;
+    margin-right: 3%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #f0f0f0;
+}
+.p1, .col-num-2{
+  float:left;
+}
+
+.center{
+  text-align: center;
+}
+
+.formAdopcia{
+  width: 45%;
+
+}
+.imgAdopcia{
+  margin-top: 25px;
+  width: 45%;
+  height: auto;
+float: right;
+}
+
+.p1 strong,
+.col-num-2 strong{
+  font-size: 1.05em;
+  color: rgba(63, 63, 63, 0.69);
+
+}
+
+.p1 img{
+  border-radius: 50%;
+    max-height: 250px;
+    max-width: 100%;
+}
+.col-num-2 img{
+    width: 40%;
+    max-height: 150px;
+    max-width: 150px;
+
+}
+
+video, body:before{
+    position: fixed;
+    top:0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+video{
+    z-index: -2;
+}
+video:before{
+    content: '';
+    display: block;
+    background: rgba(0,0,0, .4);
+    z-index: -1;
+}
+
+.oramovanie{
+    background: #000;
+    display: inline-block;
+    padding: 20px 50px 20px 110px;
+    position: relative;
+    left: -90px;
+    text-align: center;
+    border-radius: 0 18px 18px;
+}
+
+.oramovanie p{
+    color: #AFAFAF;
+}
+
+.produkty-2-cols{
+    width: 40%;
+    float: right;
+
+}
+.ciara{
+    margin-top: 20px;
+    border-top: 3px solid #222222;
+}
+.form-group{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+img:hover{
+
+}

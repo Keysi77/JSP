@@ -1,0 +1,37 @@
+SELECT status_codes.id_status, status_codes.status, repairs.status_repair
+FROM status_codes, repairs
+WHERE repairs.status_repair = status_codes.status
+
+SELECT status_codes.id_status, status_codes.status, repairs.status_repair, repairs.id_repair, repairs.client_email, repairs.car_brand, repairs.car_model, repairs.motor_vehicle_licence_plate, repairs.vin_number, repairs.what_repair
+FROM status_codes, repairs
+WHERE repairs.status_repair = status_codes.status
+
+SELECT repairs.status_repair, repairs.id_repair, repairs.client_email, repairs.car_brand, repairs.car_model, repairs.motor_vehicle_licence_plate, repairs.vin_number, repairs.what_repair, status_codes.id_status, status_codes.status
+FROM status_codes, repairs
+WHERE repairs.status_repair = status_codes.status
+
+#############################################################################
+SELECT repairs.client_email, repairs.id_repair, status_codes.status
+FROM repairs, status_codes
+WHERE repairs.status_repair=status_codes.status
+#######TOTO JE FAJN :> ukaze *client_email, id_repair,status#################
+
+SELECT repairs.id_repair, repairs.client_email, repairs.car_brand, repairs.car_model, repairs.motor_vehicle_licence_plate, repairs.vin_number, repairs.what_repair, status_codes.status
+FROM repairs, status_codes
+WHERE repairs.status_repair=status_codes.status
+
+####################STARE
+SELECT * FROM `repairs` WHERE `client_email` = ?
+
+##################
+
+
+SELECT status_codes.status, repairs.status_repair FROM status_codes, repairs WHERE status_codes.id_status=repairs.status_repair
+
+SELECT repairs.id_repair, repairs.client_email, repairs.car_brand, repairs.car_model, repairs.motor_vehicle_licence_plate, repairs.vin_number, repairs.what_repair, status_codes.id_status, status_codes.status FROM repairs, status_codes WHERE repairs.status_repair=status_codes.id_status AND status_codes.id_status = '1' ORDER BY repairs.id_repair DESC
+
+
+
+
+
+
